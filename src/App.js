@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
+import SearchInput from "./Components/SearchInput/SearchInput";
 
 export default function App() {
   return (
     <div>
-      APP
+      <SearchInput />
     </div>
-  )
+  );
 }
