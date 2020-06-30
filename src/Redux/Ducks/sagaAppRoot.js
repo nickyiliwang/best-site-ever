@@ -13,7 +13,7 @@ function* fetchRestaurants(action) {
   const location = action.payload;
   const result = yield call(getRestaurantsWithLocation, location);
 
-  //   better error handling
+  // better error handling
   if (result) {
     yield put(redux_SetRestaurantsData(result));
     yield put(redux_FetchRestaurantsSuccess(result));
