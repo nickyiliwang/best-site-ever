@@ -4,9 +4,10 @@ import LoadingSkeleton from "../../util/LoadingSkeleton";
 import { connect } from "react-redux";
 import styled from "styled-components";
 
-const StyledDisplayResults = styled.div`
+const StyledDisplayResults = styled.section`
   display: flex;
   flex-wrap: wrap;
+  margin: 20px 0;
 `;
 
 function DisplayResults({ isFetching, restaurants, filterTerm }) {
@@ -38,7 +39,7 @@ function DisplayResults({ isFetching, restaurants, filterTerm }) {
         return <p>No filter result.</p>;
       }
     } else {
-      return <p>Please enter location</p>;
+      return <p>Your results will appear in this section</p>;
     }
   };
 

@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledRestaurantCard = styled.div`
-  width: 33.33%;
+  margin: 10px;
+  width: calc(33.33% - 20px);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 `;
 
